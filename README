@@ -7,6 +7,6 @@ for serving.
 
 All branches in the target repository are served at subdirectories. Say that the
 mumble-protocol repository had a 1.2.4 branch containing documentation for the 1.2.4
-version of the Mumble protocol. When things are pushed to that repository, sphinxsrv
+version of the Mumble protocol. When commits are pushed to that branch, sphinxsrv
 makes the resulting Sphinx HTML documentation available at /1.2.4.  The master branch
 is always served at /.
