@@ -1,0 +1,12 @@
+SphinxSrv is the daemon that serves the Sphinx documentation at
+http://protocol.mumbleapp.com.
+
+Its /hook handler is hooked up as a webhook the github.com/mumble-voip/mumble-protocol
+repo. When a new commit is pushed, sphinxsrv automatically builds it and deploys it
+for serving.
+
+All branches in the target repository are served at subdirectories. Say that the
+mumble-protocol repository had a 1.2.4 branch containing documentation for the 1.2.4
+version of the Mumble protocol. When things are pushed to that repository, sphinxsrv
+makes the resulting Sphinx HTML documentation available at /1.2.4.  The master branch
+is always served at /.
